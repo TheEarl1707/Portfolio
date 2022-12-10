@@ -77,19 +77,14 @@
 								<p>Displayed below are some of the systems that showcases my efforts</p>
 							
 								<div class="row">
-								<div class="col"><button class="btn btn-primary h-100" id="btnMovieTicket">Movie Ticket System</button></div>
+								<div class="col "><button class="btn btn-primary h-100" id="btnMovieTicket" href="#divMovieTicket">Movie Ticket System</button></div>
 								<div class="col"><button class="btn btn-primary h-100" id="btnDormManagement">Dorm Management System</button></div>
 								<div class="col"><button class="btn btn-primary h-100" id="btnMovieReview">Movie Review System</button></div>
 								</div>
 							</div>
-
-
 						</div>
 					</div>
-
 				</div>
-
-
 			</div>
 		</div>
 
@@ -181,22 +176,42 @@
 
 <script>
 	$(function() {
-		$("#btnMovieTicket").on('click', function() {
+		$("#btnMovieTicket").on('click', function(e) {
+			e.preventDefault();
+
 			$("#divMovieTicket").toggle();
 			$("#divDormManagement").hide();
 			$("#divMovieReview").hide();
+
+			$('html, body').stop().animate({
+				'scrollTop': $("#divMovieTicket").offset().top
+			}, 50, 'swing', function () {
+				window.location.hash = "#divMovieTicket";
+			});
 		});
 
 		$("#btnDormManagement").on('click', function () {
 			$("#divMovieTicket").hide();
 			$("#divDormManagement").toggle();
 			$("#divMovieReview").hide();
+
+			$('html, body').stop().animate({
+				'scrollTop': $("#divDormManagement").offset().top
+			}, 50, 'swing', function () {
+				window.location.hash = "#divDormManagement";
+			});
 		});
 
 		$("#btnMovieReview").on('click', function () {
 			$("#divMovieTicket").hide();
 			$("#divDormManagement").hide();
 			$("#divMovieReview").toggle();
+
+			$('html, body').stop().animate({
+				'scrollTop': $("#divMovieReview").offset().top
+			}, 50, 'swing', function () {
+				window.location.hash = "#divMovieReview";
+			});
 		});
 		
 		$('#btnSSMovieTicket').magnificPopup({
