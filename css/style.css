@@ -1,3 +1,19 @@
 body {
     background-image: url("../assets/bg.webp");
 }
+
+.card {
+    background-color: #121020;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #b4ad63;
+    text-decoration: underline;
+}
+
+#gradient {
+background: rgb(89, 80, 154);
+    background: linear-gradient(180deg, rgba(89, 80, 154, 1) 0%, rgba(18, 16, 32, 1) 99%);
+}
