@@ -2,7 +2,7 @@ body {
     background-image: url("../assets/bg.webp");
 }
 
-.card {
+.card, .modal-header, .modal-content {
     background-color: #121020;
 }
 
