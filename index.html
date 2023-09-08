@@ -50,11 +50,11 @@
 
 	<div class="container mt-5">
 		<div class="row align-self-center mx-5">
-			<div class="col align-self-center">
+			<div class="col-md-6 align-self-center">
 				<h2 class="text-center fst-italic">"Per aspera ad astra"</h2>
 				<h4 class="text-center fst-italic">"Through hardship, to the stars"</h4>
 			</div>
-			<div class="col">
+			<div class="col-md-6">
 				<div class="position-relative top-50 start-50 translate-middle w-50">
 					<img src="assets/hero_pic1.png" class="img-fluid rounded-circle mb-2">
 				</div>
@@ -81,14 +81,6 @@
 		<div class="row mt-4">
 			<div class="col-md-6">
 				<h4 class="fw-bold">QUICK LINKS</h4>
-			</div>
-			<div class="col-md-6">
-				Email: earldupol@duck.com; Phone Num: +63 976 203 2405
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-6">
 				<h4 class="nospace">
 					<a href="https://www.linkedin.com/in/earl-dupol-8b733525a" target="_blank"><span class="bi bi-linkedin me-2"></span></a>
 					<a href="https://www.facebook.com/Earl.Dupol" target="_blank"><span class="bi bi-facebook me-2"></span></a>
@@ -96,8 +88,9 @@
 					<a href="https://twitter.com/DupolEarl" target="_blank"><span class="bi bi-twitter me-2"></span></a>
 				</h4>
 			</div>
-			<div class="col-md-6">
-				<a href="assets/Resume/Resume_Aug_31_2023.pdf" target="_blank" download="Resume - Earl Leo Dupol">Printable Resume (PDF)</a>
+			<div class="col">
+				<p class="text-end">Email: earldupol@duck.com; Phone Num: +63 976 203 2405</p>
+				<p class="text-end"><a href="assets/Resume/Resume_Aug_31_2023.pdf" target="_blank" download="Resume - Earl Leo Dupol">Printable Resume (PDF)</a></p>
 			</div>
 		</div>
 
@@ -106,9 +99,9 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-3">
+			<div id="list-example" class="col-md-3 list-group">
 				<!-- Bootstrap issue on spyscroll not working when scrolling up -->
-				<nav id="navbar-fields" class="navbar navbar-light flex-column align-items-stretch">
+				<!-- <nav id="navbar-fields" class="navbar navbar-light flex-column align-items-stretch">
 					<a class="navbar-brand"><h4>FIELDS</h4></a>
 					<nav class="nav nav-pills flex-column">
 						<a class="nav-link" href="#itemProgramming">Programming</a>
@@ -121,18 +114,25 @@
 							<a class="nav-link ms-3 my-1" href="#itemLanguage3">Language 3</a>
 						</nav>
 					</nav>
-				</nav>
+				</nav> -->
+
+				<a class="list-group-item list-group-item-action" href="#itemProgramming">Programming</a>
+				<a class="list-group-item list-group-item-action" href="#itemPHP">&emsp;PHP</a>
+				<a class="list-group-item list-group-item-action" href="#itemLanguage2">&emsp;Language 2</a>
+				<a class="list-group-item list-group-item-action" href="#itemAnotherPortfolioEntry">Another Portfolio Entry</a>
+				<a class="list-group-item list-group-item-action" href="#itemLanguage3">&emsp;Language 3</a>
 			</div>
+
 			<div class="col-md-9 scrollable">
-				<div data-bs-spy="scroll" data-bs-target="#navbar-fields" data-bs-offset="0" tabindex="0">
-					<div class="row">
+				<div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+					<div class="row m-2">
 						<h4 id="itemProgramming">Programming</h4>
-						<p>A short story about programming, maybe some reason why you actually dove yourself to this hellhole</p>
+						<p>As a BSIT Graduate, Earl possesses the necessary knowledge and reasoning to work and create programs and systems from key programming languages.</p>
 					</div>
 
-					<div class="row">
+					<div class="row m-2">
 						<h4 id="itemPHP">PHP</h4>
-						<p>Some short description on when I learned about this language, and related stuff like when did I used it, and many other shit</p>
+						<p>PHP was one of the programming languages that defined Earl's growth and love for programming. This opened his mind from the basics of web development, to an experienced back-end web developer.</p>
 					</div>
 
 					<!-- Template -->
@@ -143,9 +143,32 @@
 						<div class="col-md-8">
 							<div class="card border-0">
 								<div class="card-body">
-									<h5 class="card-title">
-										Sto. Domingo National Trade School Web-based Enrollment System</h5>
+									<!-- <div class="row">
+										<div class="col-md-8">
+											<h5 class="card-title">Sto. Domingo National Trade School Web-based Enrollment System</h5>
+										</div>
+										<div class="col-md-4">
+											<button class="btn btn-primary btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">LEARN MORE</button>
+										</div>
+									</div> -->
+									<h5 class="card-title">Sto. Domingo National Trade School Web-based Enrollment System (May 2022 - May 2023)</h5>
 									<p class="card-text project-text">A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">Learn More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row m-2 border rounded">
+						<div class="col-md-4 d-flex flex-wrap align-items-center">
+							<img src="assets/TaskManager/dashboard.png" class="img-fluid my-2" alt="Project Image">
+						</div>
+						<div class="col-md-8">
+							<div class="card border-0">
+								<div class="card-body">
+									<h5 class="card-title">Web-based Task Manager (Jul 2023 - Aug 2023)</h5>
+									<p class="card-text project-text">This is a Laravel-based project that aims to demonstrate my knowledge and skills, utilizing the Laravel framework in order to create a working Task Manager website. This website is capable of a basic account registration and login feature, the adding, editing, completing and un/archiving of selected tasks.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalTaskManagerWebsite">Learn More</button>
 								</div>
 							</div>
 						</div>
@@ -158,14 +181,45 @@
 						<div class="col-md-8">
 							<div class="card border-0">
 								<div class="card-body">
-									<h5 class="card-title">EKD Cinema</h5>
+									<h5 class="card-title">EKD Cinema (Sep 2022 - Oct 2022)</h5>
 									<p class="card-text project-text">A PHP-based project that aims to simulate an online ticket purchasing website wherein credit-based currency can purchase additional add-ons along with the movie.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalMovieTicketSystem">Learn More</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row m-2 border rounded">
+						<div class="col-md-4 d-flex flex-wrap align-items-center">
+							<img src="assets/MovieReview/index.png" class="img-fluid my-2" alt="Project Image">
+						</div>
+						<div class="col-md-8">
+							<div class="card border-0">
+								<div class="card-body">
+									<h5 class="card-title">EKD Cinema Reviews (Oct 2022 - Dec 2022)</h5>
+									<p class="card-text project-text">A separate Laravel-based project that aims to mimic a functioning website about movies and the user's reviews about it.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalMovieReviewSystem">Learn More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row m-2 border rounded">
+						<div class="col-md-4 d-flex flex-wrap align-items-center">
+							<img src="assets/DMS/index.png" class="img-fluid my-2" alt="Project Image">
+						</div>
+						<div class="col-md-8">
+							<div class="card border-0">
+								<div class="card-body">
+									<h5 class="card-title">Dorm Management System (Dec 2021)</h5>
+									<p class="card-text project-text">A PHP-based system that allows the user to make a reservation for a dormitory room, as well as to check whether a room is already boarded or not.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalDormManagementSystem">Learn More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row m-2">
 						<h4 id="itemLanguage2">Language 2</h4>
 						<p>Some short description on when I learned about this language, and related stuff like when did I used it, and many other shit</p>
 					</div>
@@ -180,6 +234,7 @@
 									<h5 class="card-title">
 										Sto. Domingo National Trade School Web-based Enrollment System</h5>
 									<p class="card-text project-text">A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">Learn More</button>
 								</div>
 							</div>
 						</div>
@@ -195,17 +250,18 @@
 									<h5 class="card-title">
 										Sto. Domingo National Trade School Web-based Enrollment System</h5>
 									<p class="card-text project-text">A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">Learn More</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row m-2">
 						<h4 id="itemAnotherPortfolioEntry">Another Portfolio Entry</h4>
 						<p>A short story about programming, maybe some reason why you actually dove yourself to this hellhole</p>
 					</div>
 
-					<div class="row">
+					<div class="row m-2">
 						<h4 id="itemLanguage3">Language 3</h4>
 						<p>Some short description on when I learned about this language, and related stuff like when did I used it, and many other shit</p>
 					</div>
@@ -220,6 +276,7 @@
 									<h5 class="card-title">
 										Sto. Domingo National Trade School Web-based Enrollment System</h5>
 									<p class="card-text project-text">A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">Learn More</button>
 								</div>
 							</div>
 						</div>
@@ -235,6 +292,49 @@
 									<h5 class="card-title">
 										Sto. Domingo National Trade School Web-based Enrollment System</h5>
 									<p class="card-text project-text">A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+									<button class="btn btn-primary h-100 w-100 btnModalOpen" data-target="#modalSDNTSEnrollmentSystem">Learn More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer mt-auto py-3">
+		<div class="text-center">© 2023 Earl Leo L. Dupol</div>
+	</footer>
+
+	<div id="modals">
+		<!-- Template for modal -->
+		<div class="modal modal-lg fade" tabindex="-1" id="modalTemplate">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Title</h5>
+						<button type="button" class="btn-close btn-close-black btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>Description</p>
+
+								<h5>Functionalities:</h5>
+								<p>Function 1</p>
+								<p>Function 2</p>
+								<p>Function n</p>
+
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>Functionality, Back-end, Database, JS</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSS" data-target="#modalTemplate">Show Screenshots</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -243,120 +343,186 @@
 			</div>
 		</div>
 
-		<!-- <div class="row">
-			<div class="col-md-4">
-				<ul class="list-group">
-					<li class="list-group-item custom-active">An item</li>
-					<li class="list-group-item">A second item</li>
-					<li class="list-group-item">A third item</li>
-					<li class="list-group-item">A fourth item</li>
-					<li class="list-group-item">And a fifth one</li>
-				</ul>
-			</div>
-
-			<div class="col-md-8">
-				<div class="row">
-					<h4>Language</h4>
-					<p>Some short description on when I learned about this language, and related stuff like when did I used it, and many other shit</p>
-				</div>
-
-				<div class="row border">
-					<div class="col-md-4">
-						<img src="assets/test_pic1.png" class="img-fluid rounded" alt="Open Book">
+		<div class="modal modal-lg fade" tabindex="-1" id="modalSDNTSEnrollmentSystem">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Sto. Domingo National Trade School Web-based Enrollment System (May 2022 - May 2023)</h5>
+						<button type="button" class="btn-close btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="col-md-8">
-						<div class="card border-0">
-							<div class="card-body">
-								<h5 class="card-title">System Title</h5>
-								<p class="card-text">Project Description</p>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>A PHP-based project for Sto. Domingo National Trade School located at Baloc, Nueva Ecija. This project aims to streamline the school's enrollment process, while also having a professionally-built webpages for visitors to learn more about the school. It consists of a web-based system for the student portal, as well as the management of staff and student accounts.</p>
+
+								<h5>Functionalities:</h5>
+								<p>School Website, News page</p>
+								<p>Student Enrollment</p>
+								<p>Staff, Student, School Year, & Announcement management</p>
+
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>Functionality, Back-end, Database, JS</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSSSDNTSEnrollmentSystem" data-target="#modalSDNTSEnrollmentSystem">Show Screenshots</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
+		<div class="modal modal-lg fade" tabindex="-1" id="modalTaskManagerWebsite">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Web-based Task Manager (Jul 2023 - Aug 2023)</h5>
+						<button type="button" class="btn-close btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>This is a Laravel-based project that aims to demonstrate my knowledge and skills, utilizing the Laravel framework in order to create a working Task Manager website. This website is capable of a basic account registration and login feature, the adding, editing, completing and un/archiving of selected tasks.</p>
 
+								<h5>Functionalities:</h5>
+								<p>Basic Authentication system (Login, Register)</p>
+								<p>Add, Update, Mark as complete, Un/Archive Tasks</p>
 
-		<!-- <div class="container mt-5">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="image-container">
-						<img src="assets/flip-book-clipart-3.jpg" alt="Open Book">
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>All (Front-end, Back-end, Functionality, Database, JS)</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSSTaskManagerWebsite" data-target="#modalTaskManagerWebsite">Show Screenshots</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="image-container">
-						<img src="assets/UphillBattle.webp" alt="Open Book">
+			</div>
+		</div>
+
+		<div class="modal modal-lg fade" tabindex="-1" id="modalMovieReviewSystem">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">EKD Cinema Reviews (Oct 2022 - Dec 2022)</h5>
+						<button type="button" class="btn-close btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>A separate laravel-based project that aims to mimic a functioning website about movies and the user's reviews about it.</p>
+
+								<h5>Functionalities:</h5>
+								<p>Site visitors can browse the available movies and check the rating and reviews.</p>
+								<p>Only the registered users can leave a rating and review</p>
+								<p>The administrators can add, update and delete the shown movies</p>
+
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>Functionality, Back-end, Database, JS</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSSMovieReview" data-target="#modalMovieReviewSystem">Show Screenshots</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="image-container">
-						<img src="image3.jpg" alt="Image 3">
+			</div>
+		</div>
+
+		<div class="modal modal-lg fade" tabindex="-1" id="modalMovieTicketSystem">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">EKD Cinema (Sep 2022 - Oct 2022)</h5>
+						<button type="button" class="btn-close btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>A PHP-based project that aims to simulate an online ticket purchasing website wherein credit-based currency can purchase additional add-ons along with the movie.
+								</p>
+
+								<h5>Functionalities:</h5>
+								<p>If the user is logged in and makes a transaction, the amount will be deducted from their virtual wallet, and they will earn reward points relative to how much they spent from the tickets</p>
+								<p>If a transaction is made without an account, then it will prompt the user to enter an amount. This amount should not be less than the total price of the transaction, or it will not proceed. The system will also send a receipt of the transaction to the provided email</p>
+								<p>The administrators of this website can add, update and delete movies and add-ons, as well as an archive option for movies, and a graph that can display the amount of tickets sold of each movie on the specified day/s</p>
+
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>Functionality, Back-end, Database, JS</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSSMovieTicket" data-target="#modalMovieTicketSystem">Show Screenshots</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
-		<!-- <div class="row">
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/flip-book-clipart-3.jpg" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">EAGER TO LEARN</figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/UphillBattle.webp" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">HARD WORKER</figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/checklist-clipart-transparent-background-6.png" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">GOAL-DRIVEN</figcaption>
-				</figure>
+		<div class="modal modal-lg fade" tabindex="-1" id="modalDormManagementSystem">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Dorm Management System (Dec 2021)</h5>
+						<button type="button" class="btn-close btnCloseModal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<h5>Description:</h5>
+								<p>A PHP-based system that allows the user to make a reservation for a dormitory room, as well as to check whether a room is already boarded or not.</p>
+
+								<h5>Functionalities:</h5>
+								<p>This system requires an account to access the rest of the system.</p>
+								<p>The user can check for a dorm's availability, access the dorm logbook, reserve or register a dorm room and update the user's information if they have already availed a room.</p>
+								<p>The dorm manager can create a violation message to a user.</p>
+
+								<div class="row">
+									<div class="col">
+										<h5>Contributions:</h5>
+										<p>Functionality, Back-end, Database, JS</p>
+									</div>
+									<div class="col">
+										<h5>Sample Screenshots:</h5>
+										<button class="btn btn-primary btnCloseModal" id="btnSSDormManagement" data-target="#modalDormManagementSystem">Show Screenshots</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/fist-1294353_960_720.png" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">DILIGENT</figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/hand reach out.png" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">KIND</figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4">
-				<figure class="figure">
-					<img src="assets/img_277010.png" class="figure-img img-fluid rounded" alt="Open Book">
-					<figcaption class="text-center fw-bold">COOPERATIVE</figcaption>
-				</figure>
-			</div>
-		</div>
-	</div> -->
 
 
-	<!-- <div class="row position-absolute top-50 start-50 translate-middle">
-		<div class="col align-self-center">
-			<h5 class="text-center fst-italic">Short Description, something impactful</h5>
-		</div>
-		<div class="col">
-			<div class="position-relative top-50 start-50 translate-middle w-100">
-				<img src="assets/hero_pic1.png" class="img-fluid rounded-circle mb-2">
-			</div>
-		</div>
-	</div> -->
 
 
-	<footer class="footer mt-auto py-3">
-		<div class="text-center">© 2023 Earl Leo L. Dupol</div>
-	</footer>
+	</div>
 </body>
 
 <script src="js/index.js"></script>
