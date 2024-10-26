@@ -1,19 +1,85 @@
-body {
-    background-image: url("../assets/bg.webp");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* --text: #f3edfd;
+--background: #080212;
+--primary: #47159d;
+--secondary: #0e041f;
+--accent: #601dd3; */
+
+/*
+I prefer this one
+
+--text: #050b04;
+--background: #ebf6e9;
+--primary: #224153;
+--secondary: #dcb7e1;
+--accent: #915b3b; */
+
+/* .navbar {
+    background: #915b3b;
+} */
+
+body, .navbar, #gradient {
+    /* background-image: url("../assets/bg.webp"); */
+    background: #ebf6e9;
+    color: #050b04;
+    /* primary: #47159d;
+    secondary: #0e041f;
+    accent: #601dd3; */
 }
 
-.card, .modal-header, .modal-content {
-    background-color: #121020;
+.card, .card-header, .modal-header, .modal-content, .list-group-item {
+    background-color: #ebf6e9;
 }
 
-a,
+.scrollable {
+    /* position: relative; */
+    /* height: 5 em; */
+    height: 500px;
+    overflow-y: auto;
+}
+
+.nospace {
+    display: inline;
+}
+
+.project-text {
+    /* height: 60px; */
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* .nav-link.active {
+    background-color: #1c8dca;
+} */
+
+/* .active {
+    background-color: #1c8dca;
+} */
+
+/* a,
 a:hover,
 a:focus {
     color: #b4ad63;
     text-decoration: underline;
-}
+} */
 
-#gradient {
+/* #gradient {
 background: rgb(89, 80, 154);
     background: linear-gradient(180deg, rgba(89, 80, 154, 1) 0%, rgba(18, 16, 32, 1) 99%);
+} */
+
+/* Use CSS to control image size and aspect ratio */
+
+/* .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
